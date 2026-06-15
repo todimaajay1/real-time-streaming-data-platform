@@ -122,13 +122,16 @@ cp src/airflow/streaming_dag.py $AIRFLOW_HOME/dags/
 
 # 5. Start ML anomaly detection
 python src/ml/anomaly_detection.py --mode=streaming
-Performance Benchmarks
+...
+
+## Performance Benchmarks
 Throughput: 50,000 events/second per Event Hub partition
 Latency: P95 < 30 seconds (ingestion → Delta Lake)
 Availability: 99.9% uptime with auto-scaling and checkpoint recovery
 Cost: $0.02 per million events (Azure Event Hubs Standard)
+...
 
-License
+## License
 Built for enterprise real-time analytics. MIT License.
 
 
