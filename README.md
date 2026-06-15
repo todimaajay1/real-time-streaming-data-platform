@@ -122,7 +122,8 @@ cp src/airflow/streaming_dag.py $AIRFLOW_HOME/dags/
 
 # 5. Start ML anomaly detection
 python src/ml/anomaly_detection.py --mode=streaming
-...
+
+```
 
 ## Performance Benchmarks
 Throughput: 50,000 events/second per Event Hub partition
